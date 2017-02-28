@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class HiLo {
+public class HiLoOriginal {
 
 	public static void main(String[] args)throws InputMismatchException{
 		//ready player 1
