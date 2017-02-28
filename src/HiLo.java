@@ -8,7 +8,7 @@ public class HiLo {
 		Scanner sc = new Scanner(System.in);
 		String sinEater = "I EAT YOUR ERRORS";
 		String restart = "";
-		
+		int counter = 0;
 		//setup outer game loop (never thought I'd see a use for a do-while...)
 		do{
 			//random integer creation
@@ -31,9 +31,9 @@ public class HiLo {
 						sinEater=sc.next();
 						continue;
 					}
-				
+					counter++;
 			}
-			System.out.println("You guessed correctly!  Play Again? (y/n)");
+			System.out.println("You guessed correctly after " + counter + " (real) tries!  Play Again? (y/n)");
 			restart = sc.next();
 		} while (restart.equalsIgnoreCase("y"));
 		
