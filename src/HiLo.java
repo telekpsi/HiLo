@@ -1,5 +1,3 @@
-import java.util.InputMismatchException;
-import java.util.Scanner;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import java.awt.BorderLayout;
