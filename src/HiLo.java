@@ -43,6 +43,11 @@ public class HiLo extends JFrame{
 		
 		txtGuess = new JTextField();
 		txtGuess.setFont(new Font("Rockwell Extra Bold", Font.BOLD, 14));
+		txtGuess.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent e){
+				checker();
+			}
+		});
 		txtGuess.setHorizontalAlignment(SwingConstants.CENTER);
 		txtGuess.setBounds(180, 108, 86, 39);
 		getContentPane().add(txtGuess);
@@ -87,6 +92,9 @@ public class HiLo extends JFrame{
 			lblOutput.setText("That's the one! Now do it again!");
 			randomMaker();
 		}
+		
+		txtGuess.requestFocus();
+		txtGuess.selectAll();
 	}
 	
 	//random integer creation
